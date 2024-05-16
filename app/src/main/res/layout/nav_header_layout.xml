@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:layout_marginTop="20dp">
+
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fl"
+            android:textAlignment="center"
+            android:id="@+id/tv_profile"
+            android:textSize="40sp"
+            android:singleLine="true"
+            android:background="@drawable/profile_bg"
+            android:padding="20dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:layout_centerVertical="true"
+            android:text="@string/name"
+            android:id="@+id/tv_profile_name"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@id/tv_profile"/>
+
+
+
+
+
+
+</RelativeLayout>

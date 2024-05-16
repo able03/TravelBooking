@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".activities.LoginActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_pin_code"
+        android:textSize="40sp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/et1"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pin_code_bg"
+            android:inputType="number"
+            android:maxLength="1"
+            android:layout_marginEnd="10dp"
+            android:textAlignment="center"
+            android:textSize="80sp" />
+
+
+        <EditText
+            android:id="@+id/et2"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pin_code_bg"
+            android:inputType="number"
+            android:maxLength="1"
+            android:layout_marginEnd="10dp"
+            android:textAlignment="center"
+            android:textSize="80sp" />
+
+        <EditText
+            android:id="@+id/et3"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pin_code_bg"
+            android:inputType="number"
+            android:maxLength="1"
+            android:layout_marginEnd="10dp"
+            android:textAlignment="center"
+            android:textSize="80sp" />
+
+        <EditText
+            android:id="@+id/et4"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pin_code_bg"
+            android:inputType="number"
+            android:maxLength="1"
+            android:layout_marginEnd="10dp"
+            android:textAlignment="center"
+            android:textSize="80sp" />
+
+
+    </LinearLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="200dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:cornerRadius="5dp"
+        android:id="@+id/btn_login"
+        android:onClick="LoginProcess"
+        android:text="@string/btn_login"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forgot_pin_code"
+        android:onClick="ForgotPIN"
+        android:layout_gravity="center"
+        android:id="@+id/tv_forgot_pin_code"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_account"
+        android:layout_gravity="center"
+        android:onClick="GoToRegister"
+        android:layout_marginTop="5dp"
+        android:id="@+id/tv_no_account"/>
+</LinearLayout>

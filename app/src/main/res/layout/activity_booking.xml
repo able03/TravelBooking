@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.BookingActivity"
+    android:scrollbars="none"
+    android:background="#E4E4E4">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            android:layout_marginHorizontal="50dp">
+            
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/book_travel"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name_2"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+            
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="10dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/date_label"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+                <com.applandeo.materialcalendarview.CalendarView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:headerColor="@color/white"
+                    app:headerLabelColor="@color/black"
+                    android:id="@+id/calendar_view"/>
+
+
+                
+                
+            </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="10dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/time_label"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+
+                    <TimePicker
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/time_picker"
+                        android:headerBackground="@color/white"
+                        android:numbersTextColor="@color/black"
+                        android:layout_marginTop="10dp"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="10dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/chip_hotel_label"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+                <com.google.android.material.chip.ChipGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:singleSelection="true"
+                    android:id="@+id/cg_hotels">
+
+
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/test"
+                        style="@style/ChipColor"
+                        android:id="@+id/hotel1"/>
+
+
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/test"
+                        style="@style/ChipColor"
+                        android:id="@+id/hotel2"/>
+
+                </com.google.android.material.chip.ChipGroup>
+
+
+
+            </LinearLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cornerRadius="10dp"
+            android:text="@string/book"
+            android:layout_marginTop="10dp"
+            android:id="@+id/btn_book"/>
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.RegisterActivity"
+    android:scrollbars="none"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:gravity="center"
+            android:text="@string/register"
+            android:textStyle="bold"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lo_fname">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/fname"
+                android:inputType="text"
+                android:id="@+id/et_fname"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lo_lname">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/lname"
+                android:id="@+id/et_lname"
+                android:inputType="text"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lo_bdate"
+            app:endIconMode="custom"
+            app:endIconDrawable="@drawable/ic_calendar">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/bdate"
+                android:clickable="true"
+                android:onClick="ClickDate"
+                android:inputType="date"
+                android:id="@+id/et_bdate"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lo_address">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/address"
+                android:inputType="textPostalAddress"
+                android:id="@+id/et_address"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lo_contact">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_contact"
+                android:inputType="number"
+                android:hint="@string/contact"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lo_email">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_email"
+                android:inputType="textEmailAddress"
+                android:hint="@string/email"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/data_privacy"
+
+            android:id="@+id/cb_privacy"/>
+
+
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cornerRadius="5dp"
+            android:text="@string/btn_register"
+            android:enabled="false"
+            android:onClick="RegisterProcess"
+            android:id="@+id/btn_register"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="GoToLogin"
+            android:text="@string/have_account"
+            android:layout_gravity="center"
+            android:id="@+id/tv_have_an_account"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+</ScrollView>

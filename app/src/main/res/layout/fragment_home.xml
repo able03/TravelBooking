@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    tools:context=".fragments.HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@android:color/transparent">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <SearchView
+                android:id="@+id/sv_search_view"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/search_bg"
+                android:iconifiedByDefault="false"
+                android:queryHint="@string/search_hint" />
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="5dp"
+                    android:text="@string/search_by" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <com.google.android.material.chip.ChipGroup
+                        android:id="@+id/cg_seacrh_by"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:singleSelection="true">
+
+                        <com.google.android.material.chip.Chip
+                            style="@style/ChipColor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/provinces" />
+
+                        <com.google.android.material.chip.Chip
+                            style="@style/ChipColor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tourist_spot" />
+
+                        <com.google.android.material.chip.Chip
+                            style="@style/ChipColor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/agency1" />
+
+
+                    </com.google.android.material.chip.ChipGroup>
+
+
+                </HorizontalScrollView>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/categories"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/cg_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:singleSelection="true">
+
+
+                    <com.google.android.material.chip.Chip
+                        style="@style/ChipColor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/all" />
+
+                    <com.google.android.material.chip.Chip
+                        style="@style/ChipColor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/palawan" />
+
+                    <com.google.android.material.chip.Chip
+                        style="@style/ChipColor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cebu" />
+
+                    <com.google.android.material.chip.Chip
+                        style="@style/ChipColor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bohol" />
+
+
+                    <com.google.android.material.chip.Chip
+                        style="@style/ChipColor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ilocos_norte" />
+
+                    <com.google.android.material.chip.Chip
+                        style="@style/ChipColor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/davao" />
+
+                </com.google.android.material.chip.ChipGroup>
+
+            </HorizontalScrollView>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

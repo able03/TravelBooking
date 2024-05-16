@@ -1,0 +1,143 @@
+<resources>
+    <string name="app_name">TravelBooking</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="enter_pin_code">ENTER PIN CODE</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="forgot_pin_code">Forgot PIN Code</string>
+    <string name="no_account">Don\'t have an account? Register here</string>
+
+    <string name="register">REGISTER</string>
+    <string name="fname">First Name</string>
+    <string name="lname">Last Name</string>
+    <string name="bdate">Birthdate</string>
+    <string name="address">Address</string>
+    <string name="contact">Contact</string>
+    <string name="email">Email</string>
+    <string name="data_privacy">Data Privacy</string>
+    <string name="btn_register">REGISTER</string>
+    <string name="have_account">Already have an account? Login here</string>
+
+    <string name="name">Name</string>
+    <string name="fl">FL</string>
+    <string name="logout">Logout</string>
+
+    <string name="search_hint">Search here…</string>
+
+
+    <string name="all">All</string>
+    <!-- Provinces & Tourist Spots-->
+    <string name="palawan">Palawan</string>
+
+    <string name="puerto_princesa">Puerto Princesa Underground River</string>
+    <string name="puerto_princesa_desc">One of the New 7 Wonders of Nature, featuring a navigable underground river.</string>
+
+    <string name="el_nido">El Nido</string>
+    <string name="el_nido_desc">Known for its stunning limestone cliffs, crystal-clear waters, and island-hopping tours.</string>
+
+    <string name="coron">Coron</string>
+    <string name="coron_desc">Famous for its World War II shipwrecks, pristine lakes, and vibrant coral reefs.</string>
+
+
+    <string name="cebu">Cebu</string>
+
+    <string name="magellan_cross">Magellan\'s Cross</string>
+    <string name="magellan_cross_desc">A historical landmark marking the arrival of Ferdinand Magellan in 1521.</string>
+
+    <string name="kawasan_falls">Kawasan Falls</string>
+    <string name="kawasan_falls_desc">: A beautiful multi-tiered waterfall known for canyoneering adventures.</string>
+
+    <string name="basilica_minore">Basilica Minore del Santo Niño</string>
+    <string name="basilica_minore_desc">The oldest Roman Catholic church in the country, housing the image of the Santo Niño.</string>
+
+
+    <string name="bohol">Bohol</string>
+
+    <string name="chocolate_hills">Chocolate Hills</string>
+    <string name="chocolate_hills_desc">Unique geological formations consisting of at least 1,260 hills that turn brown in the dry season.</string>
+
+    <string name="tarsier_sanctuary">Tarsier Sanctuary</string>
+    <string name="tarsier_sanctuary_desc">Home to the world\'s smallest primate, the Philippine tarsier.</string>
+
+    <string name="loboc_river">Loboc River Cruise</string>
+    <string name="loboc_river_desc">A scenic river cruise offering buffet dining and cultural performances.</string>
+
+
+    <string name="ilocos_norte">Ilocos Norte</string>
+
+    <string name="paoay_church">Paoay Church</string>
+    <string name="paoay_church_desc">A UNESCO World Heritage Site known for its distinct architecture.</string>
+
+    <string name="bangui_windmills">Bangui Windmills</string>
+    <string name="bangui_windmills_desc">A wind farm featuring giant wind turbines along the coast.</string>
+
+    <string name="pagudpud">Pagudpud</string>
+    <string name="pagudpud_desc">Known for its pristine beaches, including Saud Beach and Blue Lagoon.</string>
+
+
+    <string name="davao">Davao</string>
+
+    <string name="philippine_eagle">Philippine Eagle Center</string>
+    <string name="philippine_eagle_desc">A conservation center dedicated to the endangered Philippine eagle.</string>
+
+    <string name="eden_nature">Eden Nature Park</string>
+    <string name="eden_nature_desc">A mountain resort offering gardens, hiking trails, and adventure activities.</string>
+
+    <string name="samal_island">Samal Island</string>
+    <string name="samal_island_desc">Known for its beautiful beaches, diving spots, and the Monfort Bat Sanctuary.</string>
+
+
+    <string name="home">Home</string>
+    <string name="history">History</string>
+    <string name="my_bookings">My Bookings</string>
+    <string name="login">Login</string>
+    <string name="profile">Profile</string>
+    <string name="about">About</string>
+    <string name="rebook">Rebook</string>
+    <string name="details">Details</string>
+    <string name="book">Book</string>
+    <string name="booking_history">Booking History</string>
+    <string name="description">Description</string>
+    <string name="province">Province:</string>
+    <string name="test">Test</string>
+    <string name="agency">Agency:</string>
+    <string name="book_travel">Book Travel</string>
+    <string name="app_name_2">On The GO</string>
+    <string name="chip_hotel_label">Hotels</string>
+    <string name="time_label">Time</string>
+    <string name="date_label">Date</string>
+    <string name="search_by">Search by:</string>
+    <string name="categories">Categories</string>
+    <string name="provinces">Province</string>
+    <string name="agency1">Agency</string>
+    <string name="tourist_spot">Tourist Spot</string>
+
+
+    <!-- HOTELS********** -->
+
+    <string name="bai_hotel">Bai Hotel Cebu</string>
+    <string name="hop_inn_hotel">Hop Inn Hotel Cebu City</string>
+
+    <string name="amorita_resort">Amorita Resort</string>
+    <string name="henann_resort">Henann Resort Alona Beach</string>
+
+    <string name="two_seasons">Two Seasons Coron Island Resort &amp; Spa</string>
+    <string name="el_nido_resort">El Nido Resorts Lagen Island</string>
+
+    <string name="fort_ilocandia">Fort Ilocandia Resort Hotel</string>
+    <string name="plaza_del_norte">Plaza Del Norte Hotel and Convention Center</string>
+
+    <string name="marco_polo">Marco Polo davao</string>
+    <string name="waterfront_insular">Waterfront Insular Hotel Davao</string>
+
+
+
+    <string-array name="spinner">
+        <item>Province</item>
+        <item>Tourist Spot</item>
+        <item>Agency</item>
+    </string-array>
+
+</resources>
